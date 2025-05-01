@@ -1,5 +1,6 @@
 
 import { Link } from "react-router-dom";
+import { Stethoscope } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -7,9 +8,12 @@ const Footer = () => {
       <div className="container py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <h3 className="font-bold text-xl gradient-text mb-4">RegCon Online</h3>
+            <h3 className="font-bold text-xl gradient-text mb-4 flex items-center">
+              <Stethoscope className="mr-2 h-5 w-5" />
+              RegCon Online
+            </h3>
             <p className="text-muted-foreground mb-4">
-              Building AI Driven Solutions that empower businesses to achieve more.
+              Modern Digital Growth for Private Medical Practices that empower healthcare providers to focus on patient care.
             </p>
           </div>
 
@@ -59,7 +63,7 @@ const Footer = () => {
                   to="/services"
                   className="text-muted-foreground hover:text-regcon-blue transition-colors duration-300"
                 >
-                  AI Solutions
+                  Website Design & SEO
                 </Link>
               </li>
               <li>
@@ -67,23 +71,23 @@ const Footer = () => {
                   to="/services"
                   className="text-muted-foreground hover:text-regcon-blue transition-colors duration-300"
                 >
-                  Software Development
+                  Google & Meta Ads
                 </Link>
               </li>
               <li>
                 <Link
-                  to="/training"
+                  to="/services"
                   className="text-muted-foreground hover:text-regcon-blue transition-colors duration-300"
                 >
-                  Professional Training
+                  Lead Generation
                 </Link>
               </li>
               <li>
                 <Link
-                  to="/tools"
+                  to="/contact"
                   className="text-muted-foreground hover:text-regcon-blue transition-colors duration-300"
                 >
-                  Online Tools
+                  Get a Free Audit
                 </Link>
               </li>
             </ul>
@@ -92,7 +96,7 @@ const Footer = () => {
           <div>
             <h4 className="font-bold text-lg mb-4">Contact Us</h4>
             <address className="not-italic text-muted-foreground space-y-2">
-              <p>123 Business Park</p>
+              <p>123 Medical Park</p>
               <p>Pretoria, South Africa</p>
               <p className="pt-2">
                 <a 

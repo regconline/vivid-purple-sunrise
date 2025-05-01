@@ -4,6 +4,7 @@ import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import AnimatedSection from "@/components/AnimatedSection";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import { Stethoscope, BriefcaseMedical, Hospital, Syringe } from "lucide-react";
 
 const Home = () => {
   return (
@@ -17,17 +18,17 @@ const Home = () => {
           <div className="container relative z-10">
             <AnimatedSection>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 gradient-text">
-                Building AI Driven Solutions
+                Modern Digital Growth for Private Medical Practices
               </h1>
               <p className="text-xl md:text-2xl mb-8 max-w-3xl text-muted-foreground">
-                Empowering businesses with innovative technology solutions that drive growth, efficiency, and competitive advantage.
+                Empowering healthcare providers to focus on patients while we handle your digital growth.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link to="/contact" className="btn btn-primary">
-                  Get Started
+                  Book a Discovery Call
                 </Link>
                 <Link to="/services" className="btn btn-outline">
-                  Explore Our Services
+                  Get a Free Audit
                 </Link>
               </div>
             </AnimatedSection>
@@ -48,32 +49,32 @@ const Home = () => {
             <AnimatedSection delay={400} className="grid grid-cols-1 md:grid-cols-2 gap-12">
               <div>
                 <p className="text-lg mb-6">
-                  RegCon Online is a leading technology provider specializing in AI-driven solutions that help businesses transform their operations and achieve sustainable growth.
+                  RegCon Online is a leading healthcare digital marketing provider specializing in helping doctors, specialists, private clinics, and healthcare brands achieve sustainable growth through tailored digital solutions.
                 </p>
                 <p className="text-lg mb-6">
-                  With over a decade of experience, our team of experts combines deep industry knowledge with cutting-edge technical expertise to deliver solutions that address your unique business challenges.
+                  Our key differentiator is the combination of high-performing websites, data-driven ads, and automation tools specifically designed for medical practices, enabling healthcare providers to focus on patient care.
                 </p>
                 <Link to="/about" className="btn btn-primary">
-                  Learn More About Us
+                  Schedule a Consultation
                 </Link>
               </div>
               <div className="flex items-center justify-center">
                 <div className="grid grid-cols-2 gap-4">
                   <div className="text-center p-6 bg-card rounded-lg shadow-sm card-hover animate-fade-in">
-                    <h3 className="text-4xl font-bold gradient-text">10+</h3>
-                    <p className="text-muted-foreground">Years Experience</p>
+                    <h3 className="text-4xl font-bold gradient-text">100+</h3>
+                    <p className="text-muted-foreground">Medical Practices</p>
                   </div>
                   <div className="text-center p-6 bg-card rounded-lg shadow-sm card-hover animate-fade-in" style={{animationDelay: "150ms"}}>
-                    <h3 className="text-4xl font-bold gradient-text">50+</h3>
-                    <p className="text-muted-foreground">Clients Served</p>
+                    <h3 className="text-4xl font-bold gradient-text">300%</h3>
+                    <p className="text-muted-foreground">Patient Growth</p>
                   </div>
                   <div className="text-center p-6 bg-card rounded-lg shadow-sm card-hover animate-fade-in" style={{animationDelay: "300ms"}}>
-                    <h3 className="text-4xl font-bold gradient-text">200+</h3>
-                    <p className="text-muted-foreground">Projects Completed</p>
-                  </div>
-                  <div className="text-center p-6 bg-card rounded-lg shadow-sm card-hover animate-fade-in" style={{animationDelay: "450ms"}}>
                     <h3 className="text-4xl font-bold gradient-text">95%</h3>
                     <p className="text-muted-foreground">Client Satisfaction</p>
+                  </div>
+                  <div className="text-center p-6 bg-card rounded-lg shadow-sm card-hover animate-fade-in" style={{animationDelay: "450ms"}}>
+                    <h3 className="text-4xl font-bold gradient-text">8+</h3>
+                    <p className="text-muted-foreground">Years Experience</p>
                   </div>
                 </div>
               </div>
@@ -89,7 +90,7 @@ const Home = () => {
                 <h2 className="text-3xl md:text-4xl font-bold mb-4 gradient-text inline-block">Our Services</h2>
                 <div className="w-20 h-1 gradient-bg mx-auto rounded-full"></div>
                 <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-                  We offer a comprehensive range of technology services to help your business thrive in the digital age.
+                  We offer specialized digital marketing solutions designed specifically for healthcare providers.
                 </p>
               </div>
             </AnimatedSection>
@@ -98,33 +99,39 @@ const Home = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {[
                   {
-                    title: "AI Solutions",
-                    description: "Custom AI solutions that automate processes, provide insights, and enhance decision-making.",
+                    title: "Website Design & SEO",
+                    description: "Conversion-focused, SEO-optimized websites positioning your practice as premium.",
+                    icon: <Hospital className="h-10 w-10 mb-4 text-regcon-blue" />,
                     delay: 0,
                   },
                   {
-                    title: "Software Development",
-                    description: "Tailored software solutions designed to meet your unique business requirements and challenges.",
+                    title: "Google Ads & Meta Ads",
+                    description: "Laser-targeted campaigns driving real patients to your practice.",
+                    icon: <BriefcaseMedical className="h-10 w-10 mb-4 text-regcon-blue" />,
                     delay: 100,
                   },
                   {
-                    title: "Data Analytics",
-                    description: "Transform your data into actionable insights with our advanced analytics services.",
+                    title: "Lead Generation & Automation",
+                    description: "Capture, nurture, and convert leads automatically.",
+                    icon: <Stethoscope className="h-10 w-10 mb-4 text-regcon-blue" />,
                     delay: 200,
                   },
                   {
-                    title: "Cloud Services",
-                    description: "Secure, scalable cloud infrastructure and migration services for your business.",
+                    title: "Online Reputation Management",
+                    description: "Grow reviews and build trust across platforms.",
+                    icon: <Hospital className="h-10 w-10 mb-4 text-regcon-blue" />,
                     delay: 300,
                   },
                   {
-                    title: "IT Consulting",
-                    description: "Expert guidance on technology strategy, digital transformation, and IT optimization.",
+                    title: "Email & SMS Marketing",
+                    description: "Automated, personalized patient communication.",
+                    icon: <Syringe className="h-10 w-10 mb-4 text-regcon-blue" />,
                     delay: 400,
                   },
                   {
-                    title: "Training Programs",
-                    description: "Comprehensive training programs to empower your team with the latest skills and knowledge.",
+                    title: "Full Growth Packages",
+                    description: "All services combined into one growth engine for your medical practice.",
+                    icon: <BriefcaseMedical className="h-10 w-10 mb-4 text-regcon-blue" />,
                     delay: 500,
                   },
                 ].map((service, index) => (
@@ -133,11 +140,12 @@ const Home = () => {
                     className="bg-card rounded-lg p-6 shadow-sm card-hover animate-fade-in" 
                     style={{animationDelay: `${service.delay}ms`}}
                   >
-                    <h3 className="text-xl font-bold mb-3">{service.title}</h3>
+                    <div className="flex justify-center">{service.icon}</div>
+                    <h3 className="text-xl font-bold mb-3 text-center">{service.title}</h3>
                     <p className="text-muted-foreground mb-4">{service.description}</p>
                     <Link 
                       to="/services" 
-                      className="text-regcon-blue hover:underline font-medium flex items-center"
+                      className="text-regcon-blue hover:underline font-medium flex items-center justify-center"
                     >
                       Learn More
                       <svg className="w-4 h-4 ml-1 transform transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -151,7 +159,7 @@ const Home = () => {
 
             <div className="text-center mt-12">
               <Link to="/services" className="btn btn-primary">
-                View All Services
+                Schedule a Consultation
               </Link>
             </div>
           </div>
@@ -162,10 +170,10 @@ const Home = () => {
           <div className="container">
             <AnimatedSection delay={200}>
               <div className="text-center mb-12">
-                <h2 className="text-3xl md:text-4xl font-bold mb-4 gradient-text inline-block">Our Products</h2>
+                <h2 className="text-3xl md:text-4xl font-bold mb-4 gradient-text inline-block">Our Solutions</h2>
                 <div className="w-20 h-1 gradient-bg mx-auto rounded-full"></div>
                 <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-                  Discover our innovative products designed to solve specific business challenges.
+                  Discover our innovative healthcare marketing solutions designed to solve specific challenges for medical practices.
                 </p>
               </div>
             </AnimatedSection>
@@ -173,24 +181,28 @@ const Home = () => {
             <AnimatedSection delay={400}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div className="bg-card rounded-lg overflow-hidden shadow-sm group hover:shadow-md transition-shadow duration-300">
-                  <div className="h-48 bg-muted"></div>
+                  <div className="h-48 bg-muted flex justify-center items-center">
+                    <Hospital className="h-16 w-16 text-regcon-blue" />
+                  </div>
                   <div className="p-6">
-                    <h3 className="text-xl font-bold mb-2">AI Analytics Platform</h3>
+                    <h3 className="text-xl font-bold mb-2">Medical Practice Website Platform</h3>
                     <p className="text-muted-foreground mb-4">
-                      A comprehensive analytics platform with built-in AI capabilities to transform your data into actionable insights.
+                      A comprehensive website platform with built-in SEO and patient acquisition features specifically designed for healthcare providers.
                     </p>
-                    <Link to="/products" className="btn btn-primary">Learn More</Link>
+                    <Link to="/products" className="btn btn-primary">Get a Free Audit</Link>
                   </div>
                 </div>
 
                 <div className="bg-card rounded-lg overflow-hidden shadow-sm group hover:shadow-md transition-shadow duration-300">
-                  <div className="h-48 bg-muted"></div>
+                  <div className="h-48 bg-muted flex justify-center items-center">
+                    <Stethoscope className="h-16 w-16 text-regcon-blue" />
+                  </div>
                   <div className="p-6">
-                    <h3 className="text-xl font-bold mb-2">Smart Operations Manager</h3>
+                    <h3 className="text-xl font-bold mb-2">Patient Acquisition System</h3>
                     <p className="text-muted-foreground mb-4">
-                      An integrated solution for managing and optimizing your business operations with AI-powered recommendations.
+                      An integrated solution for managing and optimizing your patient acquisition with AI-powered recommendations.
                     </p>
-                    <Link to="/products" className="btn btn-primary">Learn More</Link>
+                    <Link to="/products" className="btn btn-primary">Book a Demo</Link>
                   </div>
                 </div>
               </div>
@@ -198,7 +210,7 @@ const Home = () => {
 
             <div className="text-center mt-12">
               <Link to="/products" className="btn btn-outline">
-                View All Products
+                View All Solutions
               </Link>
             </div>
           </div>
@@ -218,19 +230,19 @@ const Home = () => {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {[
                   {
-                    text: "RegCon Online delivered an exceptional AI solution that transformed our business operations. Their expertise and professionalism exceeded our expectations.",
-                    author: "Sarah Johnson",
-                    role: "CTO, TechCorp",
+                    text: "RegCon Online delivered an exceptional website and digital marketing strategy that transformed our patient acquisition. Our practice has grown by 200% in just 6 months.",
+                    author: "Dr. Sarah Johnson",
+                    role: "Dermatology Specialist, MedDerm Clinic",
                   },
                   {
-                    text: "We've been working with RegCon for over 5 years now. Their team consistently delivers quality solutions that have helped us grow and stay competitive.",
-                    author: "Michael Brown",
-                    role: "Operations Director, InnovateGroup",
+                    text: "We've been working with RegCon for over 3 years now. Their team consistently delivers quality solutions that have helped our clinic grow and stay competitive in a crowded market.",
+                    author: "Dr. Michael Brown",
+                    role: "Orthopedic Surgeon, OrthoHealth Center",
                   },
                   {
-                    text: "The training program provided by RegCon was comprehensive and highly practical. Our team immediately applied their new skills to improve our processes.",
-                    author: "Lisa Chen",
-                    role: "HR Manager, GlobalSolutions",
+                    text: "The lead generation system provided by RegCon was comprehensive and highly effective. Our patient bookings increased 150% within the first three months.",
+                    author: "Dr. Lisa Chen",
+                    role: "Family Medicine, HealthFirst Practice",
                   },
                 ].map((testimonial, index) => (
                   <div key={index} className="bg-card p-6 rounded-lg shadow-sm relative">
@@ -257,7 +269,7 @@ const Home = () => {
                 <h2 className="text-3xl md:text-4xl font-bold mb-4 gradient-text inline-block">Contact Us</h2>
                 <div className="w-20 h-1 gradient-bg mx-auto rounded-full"></div>
                 <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-                  Ready to transform your business? Get in touch with us today.
+                  Ready to transform your healthcare practice? Get in touch with us today.
                 </p>
               </div>
             </AnimatedSection>
@@ -312,7 +324,7 @@ const Home = () => {
                     ></textarea>
                   </div>
                   <button type="submit" className="btn btn-primary">
-                    Send Message
+                    Submit & Get a Free Website Audit
                   </button>
                 </form>
               </div>
@@ -323,7 +335,7 @@ const Home = () => {
                   <div>
                     <h4 className="font-bold mb-1">Address</h4>
                     <p className="text-muted-foreground">
-                      123 Business Park<br />
+                      123 Medical Park<br />
                       Pretoria, South Africa
                     </p>
                   </div>

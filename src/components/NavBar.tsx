@@ -3,14 +3,15 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ThemeToggle } from "./ThemeToggle";
 import { useIsMobile } from "@/hooks/use-mobile";
+import { Stethoscope } from "lucide-react";
 
 const navigationItems = [
   { name: "Home", path: "/" },
   { name: "About Us", path: "/about" },
   { name: "Services", path: "/services" },
-  { name: "Products", path: "/products" },
-  { name: "Training", path: "/training" },
-  { name: "Online Tools", path: "/tools" },
+  { name: "Solutions", path: "/products" },
+  { name: "Case Studies", path: "/training" },
+  { name: "Resources", path: "/tools" },
   { name: "Contact Us", path: "/contact" },
 ];
 
@@ -47,6 +48,7 @@ export default function NavBar() {
     >
       <div className="container flex items-center justify-between">
         <Link to="/" className="flex items-center">
+          <Stethoscope className="mr-2 h-6 w-6 text-regcon-blue" />
           <span className="text-xl font-bold gradient-text">RegCon Online</span>
         </Link>
 
